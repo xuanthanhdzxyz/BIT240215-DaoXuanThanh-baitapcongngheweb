@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.header {
+    border-bottom: 3px solid #c00;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #c00;
+    letter-spacing: -1px;
+    margin-bottom: 12px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border-top: 1px solid #eee;
+    padding-top: 12px;
+}
+
+    .menu a {
+        text-decoration: none;
+        color: #333;
+    }
+
+        .menu a:hover {
+            color: #c00;
+        }
+
+.row {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.col-left {
+    flex: 2;
+    min-width: 250px;
+}
+
+.col-right {
+    flex: 1;
+    min-width: 250px;
+    border-left: 1px solid #ddd;
+    padding-left: 25px;
+}
+
+
+.main-news {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.news-title {
+    font-size: 26px;
+    color: #111;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.news-summary {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.time {
+    font-size: 13px;
+    color: #888;
+}
+
+
+.sub-news {
+    background: #fafafa;
+    padding: 15px;
+    border-left: 3px solid #c00;
+}
+
+.sub-item {
+    margin-bottom: 12px;
+    font-size: 15px;
+    color: #222;
+}
+
+    .sub-item strong {
+        font-weight: 600;
+    }
+
+.goc-nhin-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #c00;
+    border-bottom: 2px solid #c00;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding-bottom: 4px;
+}
+
+.goc-nhin-headline {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 12px 0 8px 0;
+}
+
+.goc-nhin-summary {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.goc-nhin-author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #888;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+.author-name {
+    font-style: italic;
+}
+
+.comment-count {
+    background: #eee;
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #c00;
+}
+
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col-right {
+        border-left: none;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+}
